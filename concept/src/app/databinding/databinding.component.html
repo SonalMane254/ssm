@@ -4,7 +4,6 @@
         <div class="alert alert-info"> welcome to {{nm.toUpperCase()}}</div>
         <div class="alert alert-info"> welcome to {{amt * 5}}</div>
         <input type="{{typ}}" class="{{cls}}" value="login">
-
       </div>
   </div>
   <div class="row">
@@ -23,3 +22,35 @@
           <input type="button" class="btn btn-warning" value="click me" (click)="clickme($event)">
         </div>
       </div>
+      <!--<div class="row">
+        <div class="col-md-12">
+          <input type="text" [(ngModule)]="anyThing"> {{anyThing}}
+        </div>
+      </div>-->
+<br>
+      <div class="row">
+          <div class="col-md-4">
+            <app-gpstrac [crd]="crd"></app-gpstrac>
+          </div>
+          <div class="col-md-4">
+              <app-gpstrac [crd]="{imgUrl :'https://www.traccar.org/images/server/feature-devices.svg', ttl :'Devices', msg :'Traccar supports more protocols and device models than any other GPS tracking system on the market. You can select GPS trackers from a variety of vendors from low cost Chinese models to high-end quality brands.'}"></app-gpstrac>
+            </div>
+
+            <div class="col-md-4">
+                <app-gpstrac [crd]="{imgUrl :'https://www.traccar.org/images/server/feature-mobile.svg', ttl :'Devices', msg :'Traccar supports more protocols and device models than any other GPS tracking system on the market. You can select GPS trackers from a variety of vendors from low cost Chinese models to high-end quality brands.'}"></app-gpstrac>
+              </div>
+        </div><br>
+        <div class="row">
+            <div class="col-md-4">
+                <app-gpstrac [crd]="{imgUrl :'https://www.traccar.org/images/server/feature-live.svg', ttl :'Live Tracking', msg :'Traccar supports more protocols and device models than any other GPS tracking system on the market. You can select GPS trackers from a variety of vendors from low cost Chinese models to high-end quality brands.'}"></app-gpstrac>
+            </div>
+
+          <div class="col-md-4">
+              <app-gpstrac [crd]="{imgUrl :'https://www.traccar.org/images/server/feature-alerts.svg', ttl :'feature-alerts', msg :'Traccar supports more protocols and device models than any other GPS tracking system on the market. You can select GPS trackers from a variety of vendors from low cost Chinese models to high-end quality brands.'}"></app-gpstrac>
+            </div>
+
+            <div class="col-md-4">
+                <app-gpstrac [crd]="{imgUrl :'https://www.traccar.org/images/server/feature-reports.svg', ttl :'Reports', msg :'Traccar supports more protocols and device models than any other GPS tracking system on the market. You can select GPS trackers from a variety of vendors from low cost Chinese models to high-end quality brands.'}"></app-gpstrac>
+              </div>
+        </div>
+  

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Crd } from './crd';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-gpstrac',
@@ -6,10 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./gpstrac.component.css']
 })
 export class GpstracComponent implements OnInit {
+  @Input()
+  crd: Crd
 
+ 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  goSm(crd : Crd) {
+    
+    console.log(`Title is ${crd.ttl}`)
+    
   }
 
 }
