@@ -1,6 +1,63 @@
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+
 <div class="container">
-    
+    <div ng-app="">
     <!--<app-crt></app-crt>-->
     <app-databinding></app-databinding>
-    <app-gpstrac></app-gpstrac>
+   <!-- <app-gpstrac></app-gpstrac>-->
+   <br>
+   
+</div><br>
 </div>
+    
+    <head>
+        <title>Welcome to LearnKode - A code learning platform</title>
+          <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+		  <style>
+			.loader {
+				border: 16px solid #f3f3f3; /* Light grey */
+				border-top: 16px solid #3498db; /* Blue */
+				border-radius: 50%;
+				width: 120px;
+				height: 120px;
+				animation: spin 2s linear infinite;
+				margin: 0 auto;
+			}
+
+			@keyframes spin {
+				0% { transform: rotate(0deg); }
+				100% { transform: rotate(360deg); }
+			}
+			html, body, container {
+				height: 100%;
+				width: 100%;
+				margin: 0;
+			}
+		  </style>
+    </head>
+    <body ng-app="changeExample">
+        <div class="container" ng-controller="ExampleController">
+			<button class="btn" ng-click="ShowSpinner()">Show Spinner</button>
+			<button class="btn" ng-click="HideSpinner()">Hide Spinner</button>
+            <div ng-if="ShowSpinnerStatus" class="loader"></div>
+        </div>
+        <script>
+			var app = angular.module("changeExample", []);
+			app.controller('ExampleController', ['$scope', function ($scope) {
+				$scope.ShowSpinnerStatus = true;
+				
+				$scope.ShowSpinner = function(){
+					$scope.ShowSpinnerStatus = true;
+				};
+				$scope.HideSpinner = function(){
+					$scope.ShowSpinnerStatus = false;
+				};
+			}]);
+		</script>
+		</body>
+		
+		<div class="container">
+				<app-intr-com></app-intr-com>
+		</div>
