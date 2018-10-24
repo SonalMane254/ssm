@@ -7,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IntrComComponent implements OnInit {
 
-  prg : number = 0
+  prg : number = 1
   prgStr : string
+  rate : number
 
   constructor() { }
 

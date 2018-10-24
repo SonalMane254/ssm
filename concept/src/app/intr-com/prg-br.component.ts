@@ -4,7 +4,7 @@ import { Component, OnInit, Input } from '@angular/core';
   selector: 'app-prg-br',
   template: `
   <div class="progress">
-  <div class="progress-bar" role="progressbar" [style.width]="prg" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">10%</div>
+  <div class="progress-bar" role="progressbar" [style.width]="prg" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
   `,
   styles: []

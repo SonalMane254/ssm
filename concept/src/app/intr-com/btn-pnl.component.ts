@@ -6,6 +6,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   <button type="button" class="btn btn-primary" (click)="forBtn(1)">Plus</button>
   
   <button type="button" class="btn btn-danger" (click)="forBtn(2)">Minus</button>
+  
   `,
   styles: []
 })
