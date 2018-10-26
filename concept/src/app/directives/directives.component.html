@@ -1,0 +1,56 @@
+<div class="row">
+  <div class="col-md-12">
+    <p [ngStyle]="{border : '1px solid red'}">
+      Welcome to codekul
+    </p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <p [ngStyle]="pStl">
+      Welcome to codekul
+    </p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <p [ngClass]="{ 'alert' : true, 'alert-info' : true}">
+      Welcome to codekul
+    </p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <input type="text" [appSample]="'500px'">
+  </div>
+
+  <div class="col-md-12">
+    <input type="text" [appSample]="'600px'">
+  </div>
+</div><br><br>
+
+<div class="row alert-primary">
+  <div class="col-md-12">
+      <h2>Login</h2>
+    <input type =" text" #usnm placeholder="User Name"><br><br>
+    <input type="text" #pass placeholder="Password"><br><br>
+    <input type="button" value="Login" class="btn btn-primary" (click)="MakeLogin(usnm.value,pass.value)" >
+  </div>
+</div><br><br>
+
+<div class="row " *ngIf = "isLogedIn">
+  <div class="jumbotron">
+    <h1 class="display-4">Hii</h1>
+    <p class="lead">dfsgfsgdfdsfgdghfhgfhgfjghjhjhgjgghgkgjkgfjfgdhfgfegf sdfdsffdg dfg fghfdhdg</p>
+    <hr class="my-4">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6" #samples>
+    <img id="zoom1" (onmousemove)="zoomIn(samples.value)" onmouseout="zoomOut()" src="https://rukminim1.flixcart.com/image/400/400/jit64cw0-1/mobile/4/8/h/samsung-galaxy-on6-sm-j600gf-original-imaf6j6zhqa3yfvz.jpeg?q=70" appSample>
+  </div>
+  <div class="col-md-6">
+    <div>{{val}}</div>
+  </div>
+</div>

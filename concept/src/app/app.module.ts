@@ -15,6 +15,13 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { BarRatingModule } from "ngx-bar-rating";
 import { LoclRefComponent } from './locl-ref/locl-ref.component';
+import { AlPrjComponent } from './locl-ref/al-prj.component';
+import { LoginComponent } from './login/login.component';
+import { TextboxComponent } from './login/textbox.component';
+import { BtnComponent } from './login/btn.component';
+import { DirectivesComponent } from './directives/directives.component';
+import { SampleDirective } from './directives/sample.directive';
+import { ZoomComponent } from './zoom/zoom.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +33,13 @@ import { LoclRefComponent } from './locl-ref/locl-ref.component';
     BtnPnlComponent,
     PrgBrComponent,
     LoclRefComponent,
+    AlPrjComponent,
+    LoginComponent,
+    TextboxComponent,
+    BtnComponent,
+    DirectivesComponent,
+    SampleDirective,
+    ZoomComponent,
    ],
   imports: [
     BrowserModule,
