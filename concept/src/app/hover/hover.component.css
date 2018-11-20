@@ -1,0 +1,17 @@
+.frame {
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+  }
+  .zoomin img {
+    height: 200px;
+    width: 200px;
+    -webkit-transition: all 2s ease;
+       -moz-transition: all 2s ease;
+        -ms-transition: all 2s ease;
+            transition: all 2s ease;
+  }
+  .zoomin img:hover {
+    width: 600px;
+    height: 600px;
+  }

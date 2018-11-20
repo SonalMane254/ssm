@@ -15,7 +15,11 @@ export class DirectivesComponent implements OnInit {
   @ViewChild('samples')
   samples : ElementRef
   val : string 
-
+   mobs=[
+     {nm:'apple',pz:60},
+     {nm:'samsung',pz:20},
+     {nm:'moto',pz:15}
+   ]
   constructor() { }
 
   ngOnInit() {

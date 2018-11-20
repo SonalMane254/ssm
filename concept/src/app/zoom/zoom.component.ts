@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ZoomComponent implements OnInit {
 
+  // thmb = '../../assets/donation.svg'
+  // full = '../../assets/gift.svg'
+
   constructor() { }
 
   ngOnInit() {

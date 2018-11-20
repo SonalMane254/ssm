@@ -22,6 +22,18 @@ import { BtnComponent } from './login/btn.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { SampleDirective } from './directives/sample.directive';
 import { ZoomComponent } from './zoom/zoom.component';
+import { LifecycleComponent } from './lifecycle/lifecycle.component';
+import { EcomComponent } from './ecom/ecom.component';
+import { LfMnComponent } from './ecom/lf-mn/lf-mn.component';
+import { SampDirective } from './zoom/samp.directive';
+import { HoverComponent } from './hover/hover.component';
+import { ServicesComponent } from './services/services.component';
+import { DrpComponent } from './services/drp.component';
+import { AlcComponent } from './services/alc.component';
+import { DataComponent } from './services/data.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { NavComponent } from './dashboard/nav.component';
+import { DashComponent } from './dashboard/dash.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +52,18 @@ import { ZoomComponent } from './zoom/zoom.component';
     DirectivesComponent,
     SampleDirective,
     ZoomComponent,
+    LifecycleComponent,
+    EcomComponent,
+    LfMnComponent,
+    SampDirective,
+    HoverComponent,
+    ServicesComponent,
+    DrpComponent,
+    AlcComponent,
+    DataComponent,
+    DashboardComponent,
+    NavComponent,
+    DashComponent,
    ],
   imports: [
     BrowserModule,
