@@ -6,10 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
+  abc : boolean = false
+  pStl = {
+    border : '1px solid red',
+    font : 'italic'
+  }
 
   constructor() { }
 
   ngOnInit() {
   }
-
+  clickMe(od : string){
+    this.abc=true
 }
+}
+ 

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router : Router
+  ) { }
 
   ngOnInit() {
   }
 
+  onLogin(usNm : string, pass : string) {
+  // web call to check user
+    this.router.navigate(['dash',usNm], {
+      queryParams : {
+        spd : 78,
+        tmp : 85
+      }
+    })
+  }
 }
